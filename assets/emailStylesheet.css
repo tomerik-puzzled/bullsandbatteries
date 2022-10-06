@@ -1,0 +1,158 @@
+/*EMAIL PORTAL INDEX*/
+
+@import url('https://fonts.googleapis.com/css?family=Source+Code+Pro');
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@800&display=swap');
+
+
+html {}
+
+
+body {font-family: Avenir;}
+p {font-family: Avenir;}
+
+
+        .userAccount {position: absolute; right: 0; top: 0; width: 10vw; border: solid lightgrey 1px;}
+
+a {color: darkgrey;}
+
+/* Style the tab */
+.tab {
+  overflow: visible;
+  border: 1px solid #ccc;
+float: left;
+  background: rgba(200,0,0,0.1);
+  display: block;
+  width: 10vw;
+ font-family: Avenir;
+  left: 10%;
+  height: 60vh;
+}
+
+/* Style the buttons inside the left tab */
+.tab button {
+  display: block;
+  background-color: rgba(200,0,0,0.0);
+  float: left;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  padding: 1vw;
+  transition: 0.3s;
+  font-size: 2vw;
+  width: 10vw;
+  font-family: Avenir;
+}
+
+@media only screen and (max-width: 600px) {
+  .tab {
+    background-color: lightblue;
+    width: 80vw;
+    height: auto;
+  }
+
+  .tab button {width: 33.3%}
+}
+
+
+
+
+/* Change background color of buttons on hover */
+.tab button:hover {
+  background-color: #ddd;
+}
+
+/* Create an active/current tablink class */
+.tab button.active {
+  background-color: lightseagreen;
+}
+
+/* The Opened Inbox or Trash or Spam, where you see all the emails in your inbox */
+.tabcontent {
+
+  display: none;
+float: left;
+  padding: 6px 6px;
+  border: 1px solid #ccc;
+text-align: left;
+  background: rgba(200,0,0,0.1);
+  min-width: 80vw;
+  font-family: Avenir;
+}
+
+
+.emailButtons {
+  border: none;
+  border-bottom: 0.2vw solid black;
+  display: block; 
+  width: 90%; margin-top: 2vh; 
+  cursor: pointer; color: black;
+  font-size: 1.5vw;
+  text-align: left;
+  background-color: transparent;
+}
+
+.emailButtons:hover {
+  
+  background-color: rgba(255, 255, 255, 0.2);
+  color: darkgrey;
+}
+
+
+/*The background when you've opened an email*/
+.outerEmail {
+  width: 100vw;
+  height: 100vh;
+  background-color: rgba(255, 255, 255, 0.8);
+  position: fixed;
+  top: 0;
+  left: 0;
+
+}
+
+
+/*The Opened Email*/
+
+.innerEmail {
+  width: 80vw;
+  height: 80vh;
+  background-color: white;
+  position: relative;
+  margin-top: 10vh;
+  margin-left: 5vw;
+  border: solid lightgrey 3vh;
+  text-align: left;
+  padding-left: 3%;
+  padding-right: 3%;
+  overflow: visible;
+  overflow: scroll;
+}
+
+.innerEmail p {color: black; }
+.innerEmail hr {width: 90%; }
+.innerEmail p span:nth-child(2) {font-size: 1.8vw; margin-left: 1vw;}
+.innerEmail span:nth-child(1) {margin-left: 0;}
+.innerEmail h6 span:nth-child(2) {font-size:3vw; margin-left: 1vw;}
+.innerEmail hr {width: 100%; margin-left: -0vw; height: 2px; background: peachpuff; margin-top: 0px}
+
+
+
+
+
+span:nth-child(1) {
+  background-color: transparent;
+  margin-left: 2vw;
+  text-align: left;
+  
+
+}
+
+h6 {font-size: 1.4vw;}
+
+
+
+
+#firstEmail {display: none}
+#secondEmail {display: none;}
+
+
+

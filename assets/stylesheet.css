@@ -1,0 +1,116 @@
+/*BULLS AND BATTERIES*/
+
+@import url('https://fonts.googleapis.com/css?family=Source+Code+Pro');
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@200&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@800&display=swap');
+
+html {}
+
+body {
+          width: 100vw;
+            
+          color: white;
+          justify-content: center;
+          text-align: center;
+          align-items: center;
+          align-content: center;
+          vertical-align: center;
+          margin: 0 auto;
+          color: black;
+          font-family: 'Avenir'
+          
+        } 
+
+/*
+* {box-sizing: border-box;}*/
+
+
+iframe {border-radius: 1%;}
+
+
+h1
+{
+          font-family: 'Open Sans';
+          font-weight: 800;
+          color: black;
+          font-size: 5vw;
+          margin-bottom: 0px;         
+}
+
+hr {width: 50vw; margin-left: 25vw; height: 2px; background: black; margin-top: 0px}
+
+
+h2 {font-size: 2vw;  ;}
+
+h3 {font-size: 2vw;}
+
+p {font-size: 1.4vw; }
+
+
+
+button:hover {
+  background-color: rgba(0,0,255,0.3);
+  transform: scale(0.95);
+        }
+
+
+
+
+table {border: solid 0px red; width: 90vw}
+
+td { 
+    border: solid blue 0px; width: 26vw;
+  }
+
+/*----- ENERGY IMAGES ------*/
+
+.energyImages {
+  width: 19vw;
+}
+
+.engergyDrinkDiv{width: 80vw; border: solid black 0px; margin-left: 10vw;}
+
+.memberLogin {width: 100vw; background: rgba(0, 0, 0, 0.07);}
+
+ .profileImages {
+  max-width: 10vw;
+ }
+
+#emailImage{padding-left: 45%;width: 5vw}
+
+
+#FeldersHiddenPassword {position: absolute; right: 0; top: 0;width: 10vw; height: auto; background-color: white; color: white;}
+
+.header {border: solid 0px blue; width: 100vw; margin-bottom: 7vh;}
+
+.content {width: 100vw; min-height: 50vh ;border: solid pink 0px; display: flex; padding-bottom: 5vh;}
+
+.leftContent {width: 25vw; min-height: 40vh; border:  solid red 0px; }
+
+.middleContent {width: 50vw; min-height: 30vh;border: solid blue 0px; text-align: left;}
+
+.rightContent {width: 20vw; min-height: 10vh; border: green 0px solid}
+
+.spacer {width: 100vw; height: 60vh; background-color: white}
+
+footer {width: 100vw; height: 30vh; background-color: rgb(184, 235, 200);}
+            
+
+.wipeClass {border: none; position: absolute; left: 10vw; max-width: 50vw; min-height: 10vw;}
+
+
+@media only screen and (max-width: 600px) {
+  h1 {
+    
+     }
+
+  .leftContent {width: 10vw; }
+  .rightContent {width: 3vw;}
+  .middleContent {width: 80vw;}
+  p {font-size: 3vw;}
+  #TobiasHiddenPassword {position: absolute; font-size: 10px; right: 0; top: 0;width: 10vw; height: auto; 
+    background-color: white; color: white;}
+}
+
+
+
