@@ -2,7 +2,7 @@
 <html>
 
 <head>
-    <title>Bulls and Batteries</title>
+    <title>Øbba sin kjeller</title>
     
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -12,7 +12,8 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
-
+    <script src="https://cdn.jsdelivr.net/npm/p5@1.2.0/lib/p5.js"></script>
+    <script src="sketch.js"></script>
 
      
     <!--LOCAL LINKING
@@ -31,81 +32,19 @@
 
 <body>
 
-<div class="header">
-<h1 style="">BULLS<span> AND BATTERIES<span></h1> <div id="FeldersHiddenPassword">Hey dude, incase you forget your password it is password</div>
-<hr style="">
+<div id="fullscreenImage">
 <h2 style="">ENERGY DRINK CONNESIRS</h2>
 </div>
 
-<div class="content">
-
-<div class="leftContent"></div>
-
-<div class="middleContent"><p>
-WHO ARE THE BULLS AND BATTERIES, you ask? We're three RAD BROS. We're into energy drinks. Have you ever had a cup of coffee and just wanted it to be stronger and more sugary. ALL THE TIME, RIGHT?!<br><br>
-So we started our own import companies operating under the name Bulls and Batteries.  Contact either of us for wholesale energy drinks. We have all the regular brands, but cooler than that, we have some wild foreign drinks. <br><br>
-Want Argentinian Bull Testicle energy drink? Viking Berserker Berry energy drink? Vietnamese Red Ant Infused energy drink? You name it, we import it. Send a request via the button below and one of us who feel like serving you will get back to you.
-</p>
-<img id="emailImage" src="assets/images/mail.webp" onclick="" style="" class="">
+<div class="blue" style="background: red; position: absolute; width: 120px; height: 120px; display: flex; justify-content: center; align-items: center;">
+  <h3>Mor di</h3>
 </div>
-
-<div class="rightContent"></div>
-
-
-      
+<div class="scratchLayer" style="" id="canvas"></div>
 
 
-</div>
-
-<div class="engergyDrinkDiv" style="margin-top: 2vh">
-  <img id="" src="assets/images/c.png" onclick="" style="" class="energyImages">
-  <img id="" src="assets/images/b.png" onclick="" style="" class="energyImages">
-  <img id="" src="assets/images/a.jpg" onclick="" style="" class="energyImages">
-  <img id="" src="assets/images/d.jpg" onclick="" style="" class="energyImages">
-</div>
 
 
-<div class="memberLogin" style=" margin-top: 5vh;">
-          <h2 style="padding-top: 2vh;">MEMBERS LOGIN</h2>
-              
-    <table>
- 
 
-
-<tr>
-    <td> <img id="" src="assets/images/sander.jpeg" onclick="" style="" class="profileImages"></td>
-    <td> <img id="" src="assets/images/felder.jpeg" onclick="" style="" class="profileImages"></td>
-    <td> <img id="" src="assets/images/tobias.jpeg" onclick="" style="" class="profileImages"></td>
-</tr>
-
-<tr>
-    <td> <h3>Sander</h3></td>
-    <td> <h3>Felder</h3></td>
-    <td> <h3>Tobias</h3></td>
-</tr>
-
-<tr>
-    <td>  <input id="myInput1" style="margin-top:0px"><button id="myBtn1" onclick="myFunction1()">LOG IN</button><p id="demo1"></p> </td>
-    <td>  <input id="myInput2" style="margin-top:0px"><button id="myBtn2" onclick="myFunction2()">LOG IN</button><p id="demo2"></p> </td>
-    <td>  <input id="myInput3" style="margin-top:0px"><button id="myBtn3" onclick="myFunction3()">LOG IN</button><p id="demo3"></p> </td>
-</tr>
-     
-
-      </table>
-
-
-</div>
-
-<div class="spacer">
-</div>
-
-<footer>
-  
-
-
-<iframe id="wipeAway" class="wipeClass" src="WipeAway/index.html" style="" scrolling="no" allowfullscreen></iframe>
-
-</footer>
 
 <script>
 var input1 = document.getElementById("myInput1");

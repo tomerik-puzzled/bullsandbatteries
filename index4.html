@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>pamr</title>
+  <style>
+    body {
+      margin: 0;
+      overflow: hidden;
+    }
+
+    canvas {
+      display: block;
+    }
+
+    #background-image {
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100vw;
+      height: 100vh;
+      pointer-events: none; /* Allows clicks to pass through the image to the canvas */
+    }
+  </style>
+</head>
+<body>
+
+<img id="background-image" src="assets/images/pamelaWithText.jpeg" alt="Background Image">
+
+<canvas id="canvas"></canvas>
+
+<script>
+  // Set up the canvas
+  const canvas = document.getElementById('canvas');
+  const ctx = canvas.getContext('2d');
+
+  // Set the canvas size
+  canvas.width = window.innerWidth;
+  canvas.height = window.innerHeight;
+
+  // Load the background image
+  const backgroundImage = new Image();
+  backgroundImage.src = 'assets/images/pamela.jpeg';
+
+  // Draw the background image on the canvas
+  backgroundImage.onload = function () {
+    ctx.drawImage(backgroundImage, 0, 0, canvas.width, canvas.height);
+  };
+
+  // Flag to determine whether erasing is active
+  let isErasing = false;
+
+  // Event listeners for mouse down and up
+  canvas.addEventListener('mousedown', () => {
+    isErasing = true;
+  });
+
+  canvas.addEventListener('mouseup', () => {
+    isErasing = false;
+  });
+
+  // Event listener for mouse move
+  canvas.addEventListener('mousemove', (e) => {
+    if (isErasing) {
+      // Get the current mouse position
+      const x = e.clientX - canvas.getBoundingClientRect().left;
+      const y = e.clientY - canvas.getBoundingClientRect().top;
+
+      // Clear a portion of the canvas at the mouse position
+      ctx.clearRect(x - 10, y - 10, 20, 20);
+    }
+  });
+</script>
+
+</body>
+</html>
